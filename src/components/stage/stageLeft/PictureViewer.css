@@ -1,0 +1,75 @@
+.mediaContainer {
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin-right: 0px; */
+    /* background-color: darkgray; */
+    width: 40%;
+    /* height: auto; */
+}
+
+/* Also in other places such as Header.css, but want to retain control of each instance */
+img{
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+    margin:0px 10px 10px 0px;
+    width: 100%;
+}
+
+/* #Klee_pic1 {
+    width: 100%;
+    height: 100%;
+} */
+
+.mediaContainer p {
+    line-height: 70%;
+}
+
+.mediaContainer p small {
+    font-size: 8pt;
+}
+
+.mediaContainer #speech-bubble, 
+#likes, button, comment-count {
+    margin: 0;
+    padding: 2;
+    border: 1;
+    outline: 0;           
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*   LIKES   */
+.likes-heart {
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-50%) translateY(-50%) scale(5);
+    display: block;
+
+    background: url("./Bitmap-3.png") center no-repeat;
+    background-size: contain;
+    font-size: 2rem;
+    padding: 1rem;
+    position: absolute;
+    color: #125688;
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+  }
+  .likes-heart.like-enter {
+    transition: all 0.2s;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  .likes-heart.like-enter.like-enter-active {
+    transform: translateX(-50%) translateY(-50%) scale(5);
+  }
+  .likes-heart .like-leave-active {
+    display: none;
+  }
+
+  .grid-photo-wrap {
+    position: relative;
+    /* display: flex; */
+    /* justify-content: space-between; */
+  }
