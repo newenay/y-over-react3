@@ -1,0 +1,29 @@
+html{
+    /* padding: 0px;
+    margin: 0px; */
+}  
+    
+body {
+    background-color: #EEE;
+    font-family: sans-serif;
+    padding: 25px;
+    margin: 0;
+    overflow: auto;
+}
+
+h1{
+    font-family: Helvetica, Arial, "sans-serif";
+    font-weight: normal;
+    padding:  5px 0 0 5px;
+    text-shadow: 2px 2px 2px #333;
+}
+
+/*img{
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+	margin:0px 10px 10px 0px;
+}*/
+
+#root li{
+    margin-bottom: 10px;
+}
